@@ -1,4 +1,4 @@
-# VectorWeave: Weather RAG
+# VectorWeave: RAG ChatBot
 
 A sophisticated AI-powered weather agent
 built with TypeScript that combines
