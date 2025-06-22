@@ -1,8 +1,9 @@
 import mongoose from 'mongoose';
-
+import dotenv from  'dotenv';
+dotenv.config();
 export const connectDb = async () => {
     try{
-        await mongoose.connect('mongodb+srv://coderarmy:8097911457@coderarmy.4erqhaf.mongodb.net/mastra');
+        await mongoose.connect(process.env.MONGODB_URI || '');
     }
     catch(err: any){
         console.error("Error connecting to the database:", err.message);
